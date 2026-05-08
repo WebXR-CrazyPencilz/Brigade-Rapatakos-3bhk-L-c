@@ -85,7 +85,7 @@ const hotspots = {
   ],
 
   // ── Guest Corridor 1 ───────────────────────────────────────
-  // FIX BUG 3: back nav was 'foyerToLiving1' — wrong, should go back to
+  
   // livingToBedroom since that's the bedroom hub it belongs to
   guestBedroomCorridor1: [
     { target: 'guestBedroom1',   position: [ -2.5,  -2.2, -8.5 ] },
@@ -121,7 +121,7 @@ const hotspots = {
     { target: 'guestBedroomCorridor2', position: [ 2.0, -2.2, -2.0] }
   ],
 
-  // ── Foyer ──────────────────────────────────────────────────
+  // ── lobby ──────────────────────────────────────────────────
   lobby: [
     { target: 'guestBedroomCorridor2', position: [ 2.0, -2.2, -2.0] }
   ],
@@ -199,7 +199,7 @@ function loadTexture(key, onDone) {
 }
 
 function preloadInitial() {
-  const priority = ['living', 'livingToBedroom', 'livingToKitchen', 'foyerToLiving2', 'masterCorridor', 'kidsCorridor']
+  const priority = ['living', 'livingToBedroom', 'livingToKitchen', 'masterCorridor', 'kidsCorridor']
   priority.forEach((k, i) => setTimeout(() => loadTexture(k), i * 150))
 }
 
