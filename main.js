@@ -5,7 +5,7 @@ function cloudThumb(url) {
 // ─── ROOMS ─────────────────────────────────────────────────────
 const rooms = {
   lobby:                 { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/lobby.jpg',                     label: 'LOBBY' },
-  lobbytoLiving:        { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702030/foyertoliving1_zeafp8.jpg',           label: 'LOBBY TO LIVING 1' },
+  lobbytoLiving:         { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702030/foyertoliving1_zeafp8.jpg',           label: 'LOBBY TO LIVING 1' },
   kitchen:               { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702040/kitchen_suq6ha.jpg',                   label: 'KITCHEN' },
   utility:               { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702071/utility_vu3sqz.jpg',                   label: 'UTILITY' },
   living:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702039/livingroom_kw6tey.jpg',               label: 'LIVING AND DINNING' },
@@ -36,7 +36,7 @@ const hotspots = {
   living: [
     
     { target: 'livingToKitchen',  position: [-3.0,  -2.2,  4.5 ] },
-    { target: 'foyerToLiving2',   position: [-5.0,  -2.2, -3.0 ] }
+    
   ],
 
   // ── Living to Bedroom Junction ─────────────────────────────
@@ -88,7 +88,6 @@ const hotspots = {
   // FIX BUG 3: back nav was 'foyerToLiving1' — wrong, should go back to
   // livingToBedroom since that's the bedroom hub it belongs to
   guestBedroomCorridor1: [
-    { target: 'foyerToLiving1', position: [-0.0,  -2.2,  4.0 ] }, // FIX: was foyerToLiving1
     { target: 'guestBedroom1',   position: [ -2.5,  -2.2, -8.5 ] },
     { target: 'guestToilet1',    position: [ -2.50,  -2.2,  1.50 ] }
   ],
@@ -123,29 +122,13 @@ const hotspots = {
   ],
 
   // ── Foyer ──────────────────────────────────────────────────
-  foyer: [
-    { target: 'foyerToLiving1',  position: [ 2.5,  -2.2, -1.5 ] }
-  ],
-
-  // ── Foyer to Living 1 ──────────────────────────────────────
-  foyerToLiving1: [
-    { target: 'foyerToLiving2',        position: [ 3.5,  -2.2,  0. ] },
-    { target: 'foyer',                 position: [ -2.5,  -2.2,  1.80 ] },
-    { target: 'guestBedroomCorridor1', position: [ 0.10, -2.2, -2.3 ] }
-    
-  ],
-
-  // ── Foyer to Living 2 ──────────────────────────────────────
-  foyerToLiving2: [
-    { target: 'living',          position: [ 4.8,  -2.5, -5.35] },
-    { target: 'foyerToLiving1',  position: [-4.0,  -2.2,  -.350 ] },
-    { target: 'livingToKitchen', position: [ 5.35, -2.2,  0.40] }
+  lobby: [
+    { target: 'guestBedroomCorridor2', position: [ 2.0, -2.2, -2.0] }
   ],
 
   // ── Living to Kitchen ──────────────────────────────────────
   livingToKitchen: [
     { target: 'kitchen',         position: [ 0.75, -2.2,  4.5 ] },
-    { target: 'foyerToLiving2',  position: [ -7.5,  -2.2,  .40 ] },
     { target: 'livingToBedroom', position: [ 5.2,  -2.2,  0.70] },
     { target: 'living',          position: [-4.0,  -2.2, -3.0 ] }
   ],
@@ -187,7 +170,7 @@ const panoMaterial = new THREE.MeshBasicMaterial()
 scene.add(new THREE.Mesh(sGeo, panoMaterial))
 
 // ─── STATE ─────────────────────────────────────────────────────
-let currentRoom   = 'foyer'
+let currentRoom   = 'lobby'
 let hotspotMeshes = []
 let labelSprites  = []
 let camRX = 0, camRY = 0
@@ -600,5 +583,5 @@ function animate(ts) {
 // ─── INIT ──────────────────────────────────────────────────────
 buildPanel()
 preloadInitial()
-loadRoom('foyer')
+loadRoom('lobby')
 animate(0)
