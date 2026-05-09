@@ -11,7 +11,7 @@
 
   // ─── ZONES ──────────────────────────────────────────────────────
   const zones = [
-    { room: 'living',        points: '478,206 702,206 702,506 478,506',  fill: 'rgba(0,220,0,0)',    stroke: 'rgba(0,220,0,0)' },
+    { room: 'living',        points: '478,206 702,206 702,506 478,506',  fill: 'rgba(255,99,132,0.8)',    stroke: 'rgba(255,99,132,1)' },
     { room: 'masterBedroom', points: '235,184 356,184 356,455 235,455',  fill: 'rgba(255,200,0,0)',  stroke: 'rgba(255,200,0,0)' },
     { room: 'kidsBedroom',   points: '360,248 475,248 475,506 360,506',  fill: 'rgba(60,140,255,0)', stroke: 'rgba(60,140,255,0)' },
     { room: 'guestBedroom1', points: '704,248 820,248 820,455 704,455',  fill: 'rgba(255,80,140,0)', stroke: 'rgba(255,80,140,0)'},
@@ -28,7 +28,7 @@
     const layer = document.createElement('div')
     layer.id = 'fp-layer'
     layer.style.cssText = `
-      position: fixed;
+      position: fixed;-
       inset: 0;
       z-index: 10;
       display: none;
