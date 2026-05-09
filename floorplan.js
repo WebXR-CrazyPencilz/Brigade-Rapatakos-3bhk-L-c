@@ -2,7 +2,7 @@
   'use strict'
 
   // ─── CONFIG ─────────────────────────────────────────────────────
-  const FP_IMAGE_URL = 'https://ik.imagekit.io/pwzaetheh/07-3BHK%20(L)%20type%20C_TOP%20VIEW_Enlarged_Tower_02.jpg'
+  const FP_IMAGE_URL = 'https://ik.imagekit.io/pwzaetheh/07-3BHK(L)?updatedAt=1778319775172'
 
   // The viewBox matches the image's natural pixel size.
   // All polygon coordinates are based on these dimensions.
