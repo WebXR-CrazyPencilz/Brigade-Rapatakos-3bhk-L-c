@@ -8,11 +8,11 @@ const rooms = {
   lobbytoLiving:         { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/living_and_dining.jpg?updatedAt=1778243864313',        label: 'LOBBY TO LIVING 1' },
   kitchen:               { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kitchen.jpg?updatedAt=1778243864045',                   label: 'KITCHEN' },
   utility:               { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/utility.jpg?updatedAt=1778243863459',                  label: 'UTILITY' },
-  livinganddinning:      { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/living_and_dining.jpg?updatedAt=1778243864313',               label: 'LIVING AND DINNING' },
+  livinganddinning:      { image: 'https://ik.imagekit.io/pwzaetheh/living_and_dining.jpg',               label: 'LIVING AND DINNING' },
   livingtobedroom:       { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/living_to_bedroom.jpg?updatedAt=1778243864245',        label: 'LIVING TO BEDROOM' },
-  mastercorridor:        { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/master_bedroom_corridor.jpg?updatedAt=1778243864322',   label: 'MASTER BEDROOM CORRIDOR' },
+  masterbedroomcorridor: { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/master_bedroom_corridor.jpg?updatedAt=1778243864322',   label: 'MASTER BEDROOM CORRIDOR' },
   masterbedroom:         { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/master_bedroom.jpg?updatedAt=1778243863980',            label: 'MASTER BEDROOM' },
-  mastertoilet:          { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/master_bedroom_toilet.jpg?updatedAt=1778243863980',     label: 'MASTER BEDROOM TOILET' },
+  masterbedroomtoilet:   { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/master_bedroom_toilet.jpg?updatedAt=1778243863980',     label: 'MASTER BEDROOM TOILET' },
   kidsbedroomcorridor:   { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kids_bedroom_corridor.jpg?updatedAt=1778243863590',     label: 'KIDS BEDROOM CORRIDOR' },
   dining:                { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/dining.jpg?updatedAt=1778243864045',                             label: 'DINING' },
   kidsbedroom:           { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kids_bedroom.jpg?updatedAt=1778243863590',             label: 'KIDS BEDROOM' },
@@ -32,120 +32,96 @@ const hotspots = {
 
   // ── Living Room ────────────────────────────────────────────
   living: [
-    
-    { target: 'livingToKitchen',  position: [-3.0,  -2.2,  4.5 ] },
-    
+        
   ],
 
-  // ── Living to Bedroom Junction ─────────────────────────────
-  // FIX BUG 1+2: added guestBedroomCorridor1 — was missing, making it unreachable
-  // from the bedroom side. Both guest corridors now accessible from here.
   livingToBedroom: [
-    { target: 'living',                position: [-5.5,  -2.3,  0.10] },
-    { target: 'masterCorridor',        position: [ 4.5,  -2.2,  0.0 ] },
-    { target: 'kidsCorridor',          position: [ 2.0,  -2.2, -4.5 ] },
-     // FIX: was guestBedroomCorridor2 only
-    { target: 'guestBedroomCorridor2', position: [ 3.0,  -2.2, 2.20 ] }  // FIX: added second corridor
+    
   ],
 
   // ── Master Corridor ────────────────────────────────────────
   masterCorridor: [
-    { target: 'livingToBedroom', position: [-5.15, -2.2,  0.8 ] },
-    { target: 'masterBedroom',   position: [ 1.9,  -2.2, -9.0 ] },
-    { target: 'masterToilet',    position: [ 3.0,  -2.2, -0.15] }
+    
   ],
 
   // ── Master Bedroom ─────────────────────────────────────────
   masterBedroom: [
-    { target: 'masterCorridor',  position: [-1.3,  -2.2,  8.0 ] }
+   
   ],
 
   // ── Master Toilet ──────────────────────────────────────────
   masterToilet: [
-    { target: 'masterCorridor',  position: [ 3.0,  -2.2, -1.0 ] }
+   
   ],
 
   // ── Kids Corridor ──────────────────────────────────────────
   kidsCorridor: [
-    { target: 'livingToBedroom', position: [-5.0,  -2.2, -0.2 ] },
-    { target: 'kidsBedroom',     position: [ 6.0,  -2.2, -4.5 ] },
-    { target: 'kidsToilet',      position: [-2.25, -2.2, -2.0 ] }
+   
   ],
 
   // ── Kids Bedroom ───────────────────────────────────────────
   kidsBedroom: [
-    { target: 'kidsCorridor',    position: [-4.8,  -2.2,  3.2 ] }
+   
   ],
 
   // ── Kids Toilet ────────────────────────────────────────────
   kidsToilet: [
-    { target: 'kidsCorridor',    position: [ 2.25, -2.2, -2.0 ] }
+   
   ],
-
-  // ── Guest Corridor 1 ───────────────────────────────────────
   
   // livingToBedroom since that's the bedroom hub it belongs to
   guestBedroomCorridor1: [
-    { target: 'guestBedroom1',   position: [ -2.5,  -2.2, -8.5 ] },
-    { target: 'guestToilet1',    position: [ -2.50,  -2.2,  1.50 ] }
+   
   ],
 
   // ── Guest Bedroom 1 ────────────────────────────────────────
   guestBedroom1: [
-    { target: 'guestBedroomCorridor1', position: [1.30, -2.2,  6.50] }
+    
   ],
 
   // ── Guest Toilet 1 ─────────────────────────────────────────
   guestToilet1: [
-    { target: 'guestBedroomCorridor1', position: [ 2.0, -2.2, -1.50] }
+   
   ],
 
   // ── Guest Corridor 2 ───────────────────────────────────────
-  // FIX BUG 6: back nav position was [5.0,-2.2,0.0] (positive X = wrong direction)
-  // Changed to [-5.0,-2.2,0.0] so it faces the correct exit direction
-  guestBedroomCorridor2: [
-    { target: 'livingToBedroom', position: [0.90,  -2.2,  -3.0 ] }, // FIX: was [5.0,...]
-    { target: 'guestBedroom2',   position: [ 5.0,  -2.2, 3.0 ] },
-    { target: 'guestToilet2',    position: [ -1.2,  -2.2,  2.50 ] }
+  guestbedroomcorridor2: [
+   
   ],
 
   // ── Guest Bedroom 2 ────────────────────────────────────────
-  guestBedroom2: [
-    { target: 'guestBedroomCorridor2', position: [-4.0, -2.2,  -3] }
+  guestbedroom2: [
+    
   ],
 
   // ── Guest Toilet 2 ─────────────────────────────────────────
-  guestToilet2: [
-    { target: 'guestBedroomCorridor2', position: [ 2.0, -2.2, -2.0] }
+  guestbedroomtoilet2: [
+    
   ],
 
   // ── lobby ──────────────────────────────────────────────────
   lobby: [
-    { target: 'guestBedroomCorridor2', position: [ 2.0, -2.2, -2.0] }
+   
   ],
 
   // ── Living to Kitchen ──────────────────────────────────────
-  livingToKitchen: [
-    { target: 'kitchen',         position: [ 0.75, -2.2,  4.5 ] },
-    { target: 'livingToBedroom', position: [ 5.2,  -2.2,  0.70] },
-    { target: 'living',          position: [-4.0,  -2.2, -3.0 ] }
+  livingtokitchen: [
+   
   ],
 
   // ── Kitchen ────────────────────────────────────────────────
   kitchen: [
-    { target: 'utility',         position: [-6.8,  -2.2, -2.0 ] },
-    { target: 'livingToKitchen', position: [-0.4,  -2.2, -4.2 ] }
+    
   ],
 
   // ── Utility ────────────────────────────────────────────────
   utility: [
-    { target: 'kitchen',         position: [-7.5,  -2.2, -0.6 ] },
-    { target: 'staffRoom',       position: [-3.0,  -2.2,  4.1 ] }
+   
   ],
 
   // ── Staff Room ─────────────────────────────────────────────
   staffRoom: [
-    { target: 'utility',         position: [ 3.1,  -2.2, -5.5 ] }
+
   ]
 }
 
