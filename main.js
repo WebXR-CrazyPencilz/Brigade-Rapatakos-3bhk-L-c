@@ -18,7 +18,7 @@ const rooms = {
   kidstoilet:            { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702069/kidsbedroomtoilet_vohcxo.jpg',       label: 'KIDS BEDROOM TOILET' },
   guestbedroomCorridor:  { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702049/guestbedroomcorridor1_ikczlt.jpg',  label: 'GUEST BEDROOM CORRIDOR' },
   guestbedroom:          { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_corridor.jpg?updatedAt=1778243863274',            label: 'GUEST BEDROOM' },
-  guesttoilet:           { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702060/guestbedroomtoilet1_avdzas.jpg',     label: 'GUEST BEDROOM TOILET' },
+  guesttoilet:           { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_toilet.jpg?updatedAt=1778308174058',     label: 'GUEST BEDROOM TOILET' },
   maidsroom:             { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702062/staffroom_sasyds.jpg',                label: 'MAIDS ROOM' }
 }
 
