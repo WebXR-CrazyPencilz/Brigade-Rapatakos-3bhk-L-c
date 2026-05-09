@@ -14,12 +14,13 @@ const rooms = {
   masterbedroom:         { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/master_bedroom.jpg?updatedAt=1778243863980',            label: 'MASTER BEDROOM' },
   mastertoilet:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702061/masterbedroomtoilet_vr1qqf.jpg',     label: 'MASTER BEDROOM TOILET' },
   kidscorridor:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702072/kidsbedroomcorridor_yhcnbh.jpg',     label: 'KIDS BEDROOM CORRIDOR' },
+  dining:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702057/dining_gzjv0h.jpg',                             label: 'DINING' },
   kidsbedroom:           { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702063/kidsbedroom_gzxrul.jpg',             label: 'KIDS BEDROOM' },
   kidstoilet:            { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702069/kidsbedroomtoilet_vohcxo.jpg',       label: 'KIDS BEDROOM TOILET' },
-  guestbedroomCorridor:  { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702049/guestbedroomcorridor1_ikczlt.jpg',  label: 'GUEST BEDROOM CORRIDOR' },
+  guestbedroomCorridor:  { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_corridor.jpg?updatedAt=1778243863274',  label: 'GUEST BEDROOM CORRIDOR' },
   guestbedroom:          { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_corridor.jpg?updatedAt=1778243863274',            label: 'GUEST BEDROOM' },
   guesttoilet:           { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_toilet.jpg?updatedAt=1778308174058',     label: 'GUEST BEDROOM TOILET' },
-  maidsroom:             { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702062/staffroom_sasyds.jpg',                label: 'MAIDS ROOM' }
+  maidsroom:             { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/maid_room.jpg?updatedAt=1778308389390',                label: 'MAIDS ROOM' }
 }
 
 const thumbnails = Object.fromEntries(
