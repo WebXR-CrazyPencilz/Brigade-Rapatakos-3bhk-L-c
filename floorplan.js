@@ -11,13 +11,13 @@
 
   // ─── ZONES ──────────────────────────────────────────────────────
   const zones = [
-    { room: 'living',        points: '478,206 702,206 702,506 478,506',  fill: 'rgba(0,220,0,0)',      stroke: 'rgba(0,220,0,0)' },
-    { room: 'masterBedroom', points: '235,184 356,184 356,455 235,455',  fill: 'rgba(255,200,0,0)',    stroke: 'rgba(255,200,0,0)' },
-    { room: 'kidsBedroom',   points: '360,248 475,248 475,506 360,506',  fill: 'rgba(60,140,255,0)',   stroke: 'rgba(60,140,255,0)' },
-    { room: 'guestBedroom1', points: '704,248 820,248 820,455 704,455',  fill: 'rgba(255,80,140,0)',   stroke: 'rgba(255,80,140,0)'},
-    { room: 'kitchen',       points: '482,70 705,70 705,205 482,205',    fill: 'rgba(255,80,80,0)',    stroke: 'rgba(255,80,80,0)' },
-    { room: 'guestBedroom2', points: '236,70 478,70 478,188 236,188',    fill: 'rgba(180,60,255,0)',   stroke: 'rgba(180,60,255,0)' },
-    { room: 'foyer',         points: '705,67 820,67 820,248 705,248',    fill: 'rgba(0,204,204,0)',    stroke: 'rgba(0,204,204,0)' }
+    { room: 'living',        points: '478,206 702,206 702,506 478,506',  fill: 'rgba(0,220,0,0.4)',      stroke: 'rgba(0,220,0,1)' },
+    { room: 'masterBedroom', points: '235,184 356,184 356,455 235,455',  fill: 'rgba(255,200,0,0.4)',    stroke: 'rgba(255,200,0,1)' },
+    { room: 'kidsBedroom',   points: '360,248 475,248 475,506 360,506',  fill: 'rgba(60,140,255,0.4)',   stroke: 'rgba(60,140,255,1)' },
+    { room: 'guestBedroom1', points: '704,248 820,248 820,455 704,455',  fill: 'rgba(255,80,140,0.4)',   stroke: 'rgba(255,80,140,1)'},
+    { room: 'kitchen',       points: '482,70 705,70 705,205 482,205',    fill: 'rgba(255,80,80,0.4)',    stroke: 'rgba(255,80,80,1)' },
+    { room: 'guestBedroom2', points: '236,70 478,70 478,188 236,188',    fill: 'rgba(180,60,255,0.4)',   stroke: 'rgba(180,60,255,1)' },
+    { room: 'lobby',         points: '705,67 820,67 820,248 705,248',    fill: 'rgba(0,204,204,0.4)',    stroke: 'rgba(0,204,204,1)' }
   ]
 
   // ─── INJECT LAYER ───────────────────────────────────────────────
