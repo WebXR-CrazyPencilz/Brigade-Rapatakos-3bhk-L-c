@@ -1,12 +1,12 @@
 function cloudThumb(url) {
-  return url.replace('/upload/', '/upload/w_300,h_90,c_fill,q_auto,f_auto/')
+  return url.replace('/upload/','/upload/w_300,h_90,c_fill,q_auto,f_auto/')
 }
 
 // ─── ROOMS ─────────────────────────────────────────────────────
 const rooms = {
   lobby:                 { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/lobby.jpg',                     label: 'LOBBY' },
-  lobbytoLiving:         { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702030/foyertoliving1_zeafp8.jpg',           label: 'LOBBY TO LIVING 1' },
-  kitchen:               { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702040/kitchen_suq6ha.jpg',                   label: 'KITCHEN' },
+  lobbytoLiving:         { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/living_and_dining.jpg?updatedAt=1778243864313',        label: 'LOBBY TO LIVING 1' },
+  kitchen:               { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kitchen.jpg?updatedAt=1778243864045',                   label: 'KITCHEN' },
   utility:               { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702071/utility_vu3sqz.jpg',                   label: 'UTILITY' },
   living:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702039/livingroom_kw6tey.jpg',               label: 'LIVING AND DINNING' },
   livingToBedroom:       { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702040/livingtobedrooms_teryyt.jpg',        label: 'LIVING TO BEDROOM' },
@@ -16,9 +16,9 @@ const rooms = {
   kidsCorridor:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702072/kidsbedroomcorridor_yhcnbh.jpg',     label: 'KIDS BEDROOM CORRIDOR' },
   kidsBedroom:           { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702063/kidsbedroom_gzxrul.jpg',             label: 'KIDS BEDROOM' },
   kidsToilet:            { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702069/kidsbedroomtoilet_vohcxo.jpg',       label: 'KIDS BEDROOM TOILET' },
-  guestBedroomCorridor1: { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702049/guestbedroomcorridor1_ikczlt.jpg',  label: 'GUEST BEDROOM CORRIDOR' },
-  guestBedroom1:         { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702038/guestbedroom1_l9wnvg.jpg',            label: 'GUEST BEDROOM' },
-  guestToilet1:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702060/guestbedroomtoilet1_avdzas.jpg',     label: 'GUEST BEDROOM TOILET' },
+  guestBedroomCorridor: { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702049/guestbedroomcorridor1_ikczlt.jpg',  label: 'GUEST BEDROOM CORRIDOR' },
+  guestBedroom:         { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702038/guestbedroom1_l9wnvg.jpg',            label: 'GUEST BEDROOM' },
+  guestToilet:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702060/guestbedroomtoilet1_avdzas.jpg',     label: 'GUEST BEDROOM TOILET' },
   staffRoom:             { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1777702062/staffroom_sasyds.jpg',                label: 'MAIDS ROOM' }
 }
 
