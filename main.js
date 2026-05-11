@@ -8,7 +8,7 @@ const rooms = {
   lobbytoLiving:         { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/living_and_dining.jpg?updatedAt=1778243864313',        label: 'LOBBY TO LIVING 1' },
   kitchen:               { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kitchen.jpg?updatedAt=1778243864045',                   label: 'KITCHEN' },
   utility:               { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/utility.jpg?updatedAt=1778243863459',                  label: 'UTILITY' },
-  livinganddinning:      { image: 'https://ik.imagekit.io/pwzaetheh/living_and_dining.jpg',               label: 'LIVING AND DINNING' },
+  living:                { image: 'https://ik.imagekit.io/pwzaetheh/living_and_dining.jpg',               label: 'LIVING AND DINNING' },
   livingtobedroom:       { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/living_to_bedroom.jpg?updatedAt=1778243864245',        label: 'LIVING TO BEDROOM' },
   masterbedroomcorridor: { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/master_bedroom_corridor.jpg?updatedAt=1778243864322',   label: 'MASTER BEDROOM CORRIDOR' },
   masterbedroom:         { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/master_bedroom.jpg?updatedAt=1778243863980',            label: 'MASTER BEDROOM' },

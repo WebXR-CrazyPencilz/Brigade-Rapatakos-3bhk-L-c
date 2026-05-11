@@ -1,6 +1,5 @@
 ;(function () {
   'use strict'
-
   // ─── CONFIG ─────────────────────────────────────────────────────
   const FP_IMAGE_URL = 'https://ik.imagekit.io/pwzaetheh/07-3BHK(L)?updatedAt=1778319775172'
 
@@ -11,13 +10,13 @@
 
   // ─── ZONES ──────────────────────────────────────────────────────
   const zones = [
-    { room: 'living',        points: '478,206 702,206 702,506 478,506',  fill: 'rgba(0,220,0,0.4)',      stroke: 'rgba(0,220,0,1)' },
-    { room: 'masterBedroom', points: '235,184 356,184 356,455 235,455',  fill: 'rgba(255,200,0,0.4)',    stroke: 'rgba(255,200,0,1)' },
-    { room: 'kidsBedroom',   points: '360,248 475,248 475,506 360,506',  fill: 'rgba(60,140,255,0.4)',   stroke: 'rgba(60,140,255,1)' },
-    { room: 'guestBedroom1', points: '704,248 820,248 820,455 704,455',  fill: 'rgba(255,80,140,0.4)',   stroke: 'rgba(255,80,140,1)'},
-    { room: 'kitchen',       points: '482,70 705,70 705,205 482,205',    fill: 'rgba(255,80,80,0.4)',    stroke: 'rgba(255,80,80,1)' },
-    { room: 'guestBedroom2', points: '236,70 478,70 478,188 236,188',    fill: 'rgba(180,60,255,0.4)',   stroke: 'rgba(180,60,255,1)' },
-    { room: 'lobby',         points: '705,67 820,67 820,248 705,248',    fill: 'rgba(0,204,204,0.4)',    stroke: 'rgba(0,204,204,1)' }
+    { room: 'living',          points: '372,218 600,218 600,365 372,365',  fill: 'rgba(0,220,0,0.4)',      stroke: 'rgba(0,220,0,1)' },
+    { room: 'masterbedroom',   points: '325,368 556,368 556,515 325,515',  fill: 'rgba(255,200,0,0.4)',    stroke: 'rgba(255,200,0,1)' },
+    { room: 'kidsbedroom',     points: '325,68 528,68 528,214 325,214',    fill: 'rgba(60,140,255,0.4)',   stroke: 'rgba(60,140,255,1)' },
+    
+    { room: 'kitchen',         points: '602,218 715,218 715,417 602,417',  fill: 'rgba(255,80,80,0.4)',    stroke: 'rgba(255,80,80,1)' },
+    { room: 'guestbedroom',    points: '532,68 715,68 715,214 532,214',    fill: 'rgba(180,60,255,0.4)',   stroke: 'rgba(180,60,255,1)' },
+    { room: 'lobby',           points: '560,420 715,420 715,515 560,515',  fill: 'rgba(0,204,204,0.4)',    stroke: 'rgba(0,204,204,1)' }
   ]
 
   // ─── INJECT LAYER ───────────────────────────────────────────────
@@ -37,8 +36,6 @@
       background: rgba(8, 8, 10, 0.92);
     `
 
-    // ── Wrapper: image + SVG stacked on top of each other
-    //    The KEY idea from R&D: SVG is position:absolute inside
     //    a position:relative wrapper, so it always matches the image.
     const wrap = document.createElement('div')
     wrap.style.cssText = `
@@ -64,10 +61,6 @@
       user-select: none;
       -webkit-user-drag: none;
     `
-
-    // ── SVG overlay — sits exactly on top of the image
-    //    width:100% height:100% means it always matches image size.
-    //    viewBox uses the image's natural pixel dimensions,
     //    so all polygon coordinates are always correct — no JS math needed!
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
     svg.id = 'fp-svg'
