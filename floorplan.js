@@ -10,13 +10,13 @@
 
   // ─── ZONES ──────────────────────────────────────────────────────
   const zones = [
-    { room: 'living',          points: '372,218 600,218 600,365 372,365',  fill: 'rgba(0,220,0,0.4)',      stroke: 'rgba(0,220,0,1)' },
-    { room: 'masterbedroom',   points: '325,368 556,368 556,515 325,515',  fill: 'rgba(255,200,0,0.4)',    stroke: 'rgba(255,200,0,1)' },
-    { room: 'kidsbedroom',     points: '325,68 528,68 528,214 325,214',    fill: 'rgba(60,140,255,0.4)',   stroke: 'rgba(60,140,255,1)' },
+    { room: 'living',          points: '372,218 600,218 600,365 372,365',  fill: 'transparent',      stroke: 'transparent' },
+    { room: 'masterbedroom',   points: '325,368 556,368 556,515 325,515',  fill: 'transparent',    stroke: 'transparent' },
+    { room: 'kidsbedroom',     points: '325,68 528,68 528,214 325,214',    fill: 'transparent',   stroke: 'transparent' },
     
-    { room: 'kitchen',         points: '602,218 715,218 715,417 602,417',  fill: 'rgba(255,80,80,0.4)',    stroke: 'rgba(255,80,80,1)' },
-    { room: 'guestbedroom',    points: '532,68 715,68 715,214 532,214',    fill: 'rgba(180,60,255,0.4)',   stroke: 'rgba(180,60,255,1)' },
-    { room: 'lobby',           points: '560,420 715,420 715,515 560,515',  fill: 'rgba(0,204,204,0.4)',    stroke: 'rgba(0,204,204,1)' }
+    { room: 'kitchen',         points: '602,218 715,218 715,417 602,417',  fill: 'transparent',    stroke: 'transparent' },
+    { room: 'guestbedroom',    points: '532,68 715,68 715,214 532,214',    fill: 'transparent',   stroke: 'transparent' },
+    { room: 'lobby',           points: '560,420 715,420 715,515 560,515',  fill: 'transparent',    stroke: 'transparent' }
   ]
 
   // ─── INJECT LAYER ───────────────────────────────────────────────
