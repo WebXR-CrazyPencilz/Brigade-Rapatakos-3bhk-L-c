@@ -5,10 +5,10 @@ function cloudThumb(url) {
 // ─── ROOMS ─────────────────────────────────────────────────────
 const rooms = {
   lobby:                 { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492364/lobby_wns5az.jpg',                     label: 'LOBBY' },
-  lobbytoLiving:         { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492357/lobby_to_living_kibvik.jpg',        label: 'LOBBY TO LIVING 1' },
+  lobbytoLiving:         { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492357/lobby_to_living_kibvik.jpg',        label: 'LOBBY TO LIVING ' },
+  living:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492335/living_and_dining_nizygo.jpg',               label: 'LIVING AND DINNING' },
   kitchen:               { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492334/kitchen_isiycb.jpg',                   label: 'KITCHEN' },
   utility:               { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492375/utility_p9lxgn.jpg',                  label: 'UTILITY' },
-  living:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492335/living_and_dining_nizygo.jpg',               label: 'LIVING AND DINNING' },
   //livingtobedroom:       { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492365/living_to_bedroom_v3yq7k.jpg',        label: 'LIVING TO BEDROOM' },
   masterbedroomcorridor: { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492372/master_bedroom_corridor_yxxppu.jpg',   label: 'MASTER BEDROOM CORRIDOR' },
   masterbedroom:         { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492364/master_bedroom_rdmnkm.jpg',            label: 'MASTER BEDROOM' },
@@ -32,10 +32,21 @@ const hotspots = {
 
   // ── Living Room ────────────────────────────────────────────
   living: [
-        
+    {
+      target: 'kitchen',
+      position: [0, -1.5, -8.5]
+    },
+    {
+      target: 'masterbedroom',
+      position: [4, -1.5, -7.5]
+    }
   ],
 
   livingToBedroom: [
+    
+  ],
+
+  lobbytoliving: [
     
   ],
 
@@ -84,28 +95,8 @@ const hotspots = {
    
   ],
 
-  // ── Guest Corridor 2 ───────────────────────────────────────
-  guestbedroomcorridor2: [
-   
-  ],
-
-  // ── Guest Bedroom 2 ────────────────────────────────────────
-  guestbedroom2: [
-    
-  ],
-
-  // ── Guest Toilet 2 ─────────────────────────────────────────
-  guestbedroomtoilet2: [
-    
-  ],
-
   // ── lobby ──────────────────────────────────────────────────
   lobby: [
-   
-  ],
-
-  // ── Living to Kitchen ──────────────────────────────────────
-  livingtokitchen: [
    
   ],
 
@@ -120,7 +111,7 @@ const hotspots = {
   ],
 
   // ── Staff Room ─────────────────────────────────────────────
-  staffRoom: [
+  maidsRoom: [
 
   ]
 }
