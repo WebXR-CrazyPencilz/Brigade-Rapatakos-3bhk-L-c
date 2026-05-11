@@ -15,7 +15,7 @@ const rooms = {
   masterbedroomtoilet:   { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/master_bedroom_toilet.jpg?updatedAt=1778243863980',     label: 'MASTER BEDROOM TOILET' },
   kidsbedroomcorridor:   { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kids_bedroom_corridor.jpg?updatedAt=1778243863590',     label: 'KIDS BEDROOM CORRIDOR' },
   dining:                { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/dining.jpg?updatedAt=1778243864045',                             label: 'DINING' },
-  kidsbedroom:           { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kids_bedroom.jpg?updatedAt=1778243863590',             label: 'KIDS BEDROOM' },
+  kidsbedroom:           { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kids_bedroom.jpg',             label: 'KIDS BEDROOM' },
   kidsbedroomtoilet:     { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kids_bedroom_toilet.jpg?updatedAt=1778243862981',       label: 'KIDS BEDROOM TOILET' },
   guestbedroomCorridor:  { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_corridor.jpg?updatedAt=1778243863274',  label: 'GUEST BEDROOM CORRIDOR' },
   guestbedroom:          { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_corridor.jpg?updatedAt=1778243863274',            label: 'GUEST BEDROOM' },
