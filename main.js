@@ -20,7 +20,7 @@ const rooms = {
   guestbedroomCorridor:  { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_corridor.jpg?updatedAt=1778243863274',  label: 'GUEST BEDROOM CORRIDOR' },
   guestbedroom:          { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_corridor.jpg?updatedAt=1778243863274',            label: 'GUEST BEDROOM' },
   guesttoilet:           { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_toilet.jpg?updatedAt=1778308174058',     label: 'GUEST BEDROOM TOILET' },
-  maidsroom:             { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/maid_room.jpg?updatedAt=1778308389390',                label: 'MAIDS ROOM' }
+  maidsroom:             { image: 'https://ik.imagekit.io/pwzaetheh/maids_room.jpg',                label: 'MAIDS ROOM' }
 }
 
 const thumbnails = Object.fromEntries(
