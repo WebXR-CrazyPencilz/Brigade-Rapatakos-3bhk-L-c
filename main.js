@@ -18,9 +18,9 @@ const rooms = {
   kidsbedroom:           { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kids_bedroom.jpg',             label: 'KIDS BEDROOM' },
   kidsbedroomtoilet:     { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/kids_bedroom_toilet.jpg?updatedAt=1778243862981',       label: 'KIDS BEDROOM TOILET' },
   guestbedroomCorridor:  { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_corridor.jpg?updatedAt=1778243863274',  label: 'GUEST BEDROOM CORRIDOR' },
-  guestbedroom:          { image: 'res.cloudinary.com/dp5ifzgge/image/upload/v1778492325/guest_bedroom_mulmjo.jpg',            label: 'GUEST BEDROOM' },
+  guestbedroom:          { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom.jpg?updatedAt=1778243863274',            label: 'GUEST BEDROOM' },
   guesttoilet:           { image: 'https://ik.imagekit.io/pwzaetheh/3BHK(L)C/guest_bedroom_toilet.jpg?updatedAt=1778308174058',     label: 'GUEST BEDROOM TOILET' },
-  maidsroom:             { image: 'https://ik.imagekit.io/pwzaetheh/maids_room.jpg',                label: 'MAIDS ROOM' }
+  maidsroom:             { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778493004/guest_bedroom_toilet_r8vfoj.jpg',                label: 'MAIDS ROOM' }
 }
 
 const thumbnails = Object.fromEntries(
