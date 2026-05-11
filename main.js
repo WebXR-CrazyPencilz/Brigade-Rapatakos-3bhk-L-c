@@ -37,7 +37,7 @@ const hotspots = {
       position: [0, -1.5, -8.5]
     },
     {
-      target: 'masterbedroom',
+      target: 'livingtobedroom',
       position: [4, -1.5, -7.5]
     }
   ],
