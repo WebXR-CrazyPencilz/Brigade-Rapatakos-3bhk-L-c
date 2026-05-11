@@ -15,10 +15,10 @@ const rooms = {
   masterbedroomtoilet:   { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492375/master_bedroom_toilet_b9jk2q.jpg',     label: 'MASTER BEDROOM TOILET' },
   //kidsbedroomcorridor:   { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492346/kids_bedroom_corridor_nww1mt.jpg',     label: 'KIDS BEDROOM CORRIDOR' },
   dining:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492344/dining_b1qy9b.jpg',                             label: 'DINING' },
-  //kidsbedroom:           { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492402/kids_bedroom_xych4h.jpg',             label: 'KIDS BEDROOM' },
+  kidsbedroom:           { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492402/kids_bedroom_xych4h.jpg',             label: 'KIDS BEDROOM' },
   kidsbedroomtoilet:     { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492990/kids_bedroom_toilet_wrtypf.jpg',       label: 'KIDS BEDROOM TOILET' },
   //guestbedroomCorridor:  { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492347/guest_bedroom_corridor_hmcmxc.jpg',  label: 'GUEST BEDROOM CORRIDOR' },
-  guestbedroom:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492325/guest_bedroom_mulmjo.jpg',            label: 'GUEST BEDROOM' },
+  //guestbedroom:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492325/guest_bedroom_mulmjo.jpg',            label: 'GUEST BEDROOM' },
   guestbedroomtoilet:    { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778493004/guest_bedroom_toilet_r8vfoj.jpg',     label: 'GUEST BEDROOM TOILET' },
   maidsroom:             { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492361/maids_room_wtwg54.jpg',                label: 'MAIDS ROOM' }
 }
