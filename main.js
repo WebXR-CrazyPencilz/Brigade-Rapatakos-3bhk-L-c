@@ -4,94 +4,139 @@ function cloudThumb(url) {
 
 // ─── ROOMS ─────────────────────────────────────────────────────
 const rooms = {
-  lobby:                 { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492364/lobby_wns5az.jpg',                     label: 'LOBBY' },
-  lobbytoLiving:         { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492357/lobby_to_living_kibvik.jpg',        label: 'LOBBY TO LIVING ' },
-  living:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492335/living_and_dining_nizygo.jpg',               label: 'LIVING AND DINNING' },
-  kitchen:               { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492334/kitchen_isiycb.jpg',                   label: 'KITCHEN' },
-  utility:               { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492375/utility_p9lxgn.jpg',                  label: 'UTILITY' },
-  //livingtobedroom:       { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492365/living_to_bedroom_v3yq7k.jpg',        label: 'LIVING TO BEDROOM' },
-  masterbedroomcorridor: { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492372/master_bedroom_corridor_yxxppu.jpg',   label: 'MASTER BEDROOM CORRIDOR' },
-  masterbedroom:         { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492364/master_bedroom_rdmnkm.jpg',            label: 'MASTER BEDROOM' },
-  masterbedroomtoilet:   { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492375/master_bedroom_toilet_b9jk2q.jpg',     label: 'MASTER BEDROOM TOILET' },
-  //kidsbedroomcorridor:   { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492346/kids_bedroom_corridor_nww1mt.jpg',     label: 'KIDS BEDROOM CORRIDOR' },
-  dining:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492344/dining_b1qy9b.jpg',                             label: 'DINING' },
-  kidsbedroom:           { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492402/kids_bedroom_xych4h.jpg',             label: 'KIDS BEDROOM' },
-  kidsbedroomtoilet:     { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492990/kids_bedroom_toilet_wrtypf.jpg',       label: 'KIDS BEDROOM TOILET' },
-  //guestbedroomCorridor:  { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492347/guest_bedroom_corridor_hmcmxc.jpg',  label: 'GUEST BEDROOM CORRIDOR' },
-  //guestbedroom:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492325/guest_bedroom_mulmjo.jpg',            label: 'GUEST BEDROOM' },
-  guestbedroomtoilet:    { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778493004/guest_bedroom_toilet_r8vfoj.jpg',     label: 'GUEST BEDROOM TOILET' },
-  maidsroom:             { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492361/maids_room_wtwg54.jpg',                label: 'MAIDS ROOM' }
+  lobby:                  { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492364/lobby_wns5az.jpg',                    label: 'LOBBY' },
+  lobbytoliving:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492357/lobby_to_living_kibvik.jpg',          label: 'LOBBY TO LIVING ' },
+  living:                 { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492335/living_and_dining_nizygo.jpg',        label: 'LIVING' },
+  kitchen:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492334/kitchen_isiycb.jpg',                  label: 'KITCHEN' },
+  utility:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492375/utility_p9lxgn.jpg',                  label: 'UTILITY' },
+  livingtobedroom:        { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582304/living_to_bedroom_auizdg.jpg',      label: 'LIVING TO BEDROOM' },
+  masterbedroomcorridor:  { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492372/master_bedroom_corridor_yxxppu.jpg',  label: 'MASTER BEDROOM CORRIDOR' },
+  masterbedroom:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492364/master_bedroom_rdmnkm.jpg',           label: 'MASTER BEDROOM' },
+  masterbedroomtoilet:    { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492375/master_bedroom_toilet_b9jk2q.jpg',    label: 'MASTER BEDROOM TOILET' },
+  kidsbedroomcorridor:    { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582329/kids_bedroom_corridor_yhv1pz.jpg',  label: 'KIDS BEDROOM CORRIDOR' },
+  dinning:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492344/dining_b1qy9b.jpg',                  label: 'DINNING' },
+  kidsbedroom:            { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492402/kids_bedroom_xych4h.jpg',             label: 'KIDS BEDROOM' },
+  kidsbedroomtoilet:      { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492990/kids_bedroom_toilet_wrtypf.jpg',      label: 'KIDS BEDROOM TOILET' },
+  guestbedroomCorridor:   { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582322/guest_bedroom_corridor_ad1ibf.jpg', label: 'GUEST BEDROOM CORRIDOR' },
+  guestbedroom:           { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582316/guest_bedroom_fstaid.jpg',          label: 'GUEST BEDROOM' },
+  guestbedroomtoilet:     { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778493004/guest_bedroom_toilet_r8vfoj.jpg',     label: 'GUEST BEDROOM TOILET' },
+  maidsroom:              { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492361/maids_room_wtwg54.jpg',               label: 'MAIDS ROOM' }
 }
 
 const thumbnails = Object.fromEntries(
   Object.entries(rooms).map(([key, val]) => [key, { image: cloudThumb(val.image) }])
 )
-
 // ─── HOTSPOTS ──────────────────────────────────────────────────
 const hotspots = {
 
   // ── Living Room ────────────────────────────────────────────
   living: [
     {
-      target: 'kitchen',
-      position: [0, -1.5, -8.5]
+      target: 'dinning',
+      position: [-4.25, -2.2, 2.80]
     },
     {
-      target: 'livingtobedroom',
-      position: [4, -1.5, -7.5]
+      target: 'lobbytoliving',
+      position: [-4.5, -2.2, -1.8]
     }
   ],
 
-  livingToBedroom: [
-    
+  livingtobedroom: [
+    {
+      target: 'kidsbedroomcorridor',
+      position: [4., -2.2, 0]
+    },
+    {
+      target: 'guestbedroomcorridor',
+      position: [-4., -2.2, 0]
+    }
+  ],
+
+  dinning: [
+    {
+      target: 'livingtobedroom',
+      position: [1.7, -2.2, 3.0]
+    },
+    {
+      target: 'living',
+      position: [4.6, -2.2, -3.5]
+    },
+    {
+      target: 'lobbytoliving',
+      position: [-.6, -2.2, -5.1]
+    }
   ],
 
   lobbytoliving: [
-    
+    {
+      target: 'living',
+      position: [4, -2.2, 2]
+    },
+    {
+      target: 'dinning',
+      position: [0.05, -2.2, 5.45]
+    }
   ],
-
   // ── Master Corridor ────────────────────────────────────────
-  masterCorridor: [
-    
+  masterbedroomcorridor: [
+    {
+      target: 'livingtobedroom',
+      position: [-4, -2.2, 2]
+    },
+    {
+      target: 'masterbedroomtoilet',
+      position: [-.75, -2.2, -3.4]
+    },
+    {
+      target: 'masterbedroom',
+      position: [5.2, -2.2, -.35]
+    }
   ],
-
   // ── Master Bedroom ─────────────────────────────────────────
-  masterBedroom: [
-   
+  masterbedroom: [
+   {
+      target: 'masterbedroomcorridor',
+      position: [-5.3, -2.2, 0]
+    }
   ],
-
   // ── Master Toilet ──────────────────────────────────────────
-  masterToilet: [
-   
+  masterbedroomtoilet: [
+   {
+      target: 'masterbedroomcorridor',
+      position: [-0.1, -2.2, 3.1]
+    }
   ],
 
   // ── Kids Corridor ──────────────────────────────────────────
-  kidsCorridor: [
+  kidscorridor: [
    
   ],
 
   // ── Kids Bedroom ───────────────────────────────────────────
-  kidsBedroom: [
+  kidsbedroom: [
    
   ],
 
   // ── Kids Toilet ────────────────────────────────────────────
-  kidsToilet: [
+  kidstoilet: [
    
   ],
   
   // livingToBedroom since that's the bedroom hub it belongs to
-  guestBedroomCorridor1: [
+  guestbedroomcorridor: [
    
   ],
 
   // ── Guest Bedroom 1 ────────────────────────────────────────
-  guestBedroom1: [
-    
+  guestbedroom: [
+    {
+      target: 'guestbedroomcorridor',
+      position: [3, -2.2, -2.60]
+    }
   ],
 
   // ── Guest Toilet 1 ─────────────────────────────────────────
-  guestToilet1: [
+  guesttoilet: [
    
   ],
 
