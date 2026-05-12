@@ -8,17 +8,18 @@ const rooms = {
   lobbytoliving:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492357/lobby_to_living_kibvik.jpg',          label: 'LOBBY TO LIVING ' },
   living:                 { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492335/living_and_dining_nizygo.jpg',        label: 'LIVING' },
   kitchen:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492334/kitchen_isiycb.jpg',                  label: 'KITCHEN' },
+  dinning:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492344/dining_b1qy9b.jpg',                  label: 'DINNING' },
   utility:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492375/utility_p9lxgn.jpg',                  label: 'UTILITY' },
-  livingtobedroom:        { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582304/living_to_bedroom_auizdg.jpg',      label: 'LIVING TO BEDROOM' },
+  livingtobedroom:        { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582304/living_to_bedroom_auizdg.jpg',        label: 'LIVING TO BEDROOM' },
   masterbedroomcorridor:  { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492372/master_bedroom_corridor_yxxppu.jpg',  label: 'MASTER BEDROOM CORRIDOR' },
   masterbedroom:          { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492364/master_bedroom_rdmnkm.jpg',           label: 'MASTER BEDROOM' },
   masterbedroomtoilet:    { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492375/master_bedroom_toilet_b9jk2q.jpg',    label: 'MASTER BEDROOM TOILET' },
-  kidsbedroomcorridor:    { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582329/kids_bedroom_corridor_yhv1pz.jpg',  label: 'KIDS BEDROOM CORRIDOR' },
-  dinning:                { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492344/dining_b1qy9b.jpg',                  label: 'DINNING' },
+  kidsbedroomcorridor:    { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582329/kids_bedroom_corridor_yhv1pz.jpg',    label: 'KIDS BEDROOM CORRIDOR' },
+  
   kidsbedroom:            { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492402/kids_bedroom_xych4h.jpg',             label: 'KIDS BEDROOM' },
   kidsbedroomtoilet:      { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492990/kids_bedroom_toilet_wrtypf.jpg',      label: 'KIDS BEDROOM TOILET' },
-  guestbedroomCorridor:   { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582322/guest_bedroom_corridor_ad1ibf.jpg', label: 'GUEST BEDROOM CORRIDOR' },
-  guestbedroom:           { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582316/guest_bedroom_fstaid.jpg',          label: 'GUEST BEDROOM' },
+  guestbedroomcorridor:   { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582322/guest_bedroom_corridor_ad1ibf.jpg',   label: 'GUEST BEDROOM CORRIDOR' },
+  guestbedroom:           { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778582316/guest_bedroom_fstaid.jpg',            label: 'GUEST BEDROOM' },
   guestbedroomtoilet:     { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778493004/guest_bedroom_toilet_r8vfoj.jpg',     label: 'GUEST BEDROOM TOILET' },
   maidsroom:              { image: 'https://res.cloudinary.com/dp5ifzgge/image/upload/v1778492361/maids_room_wtwg54.jpg',               label: 'MAIDS ROOM' }
 }
@@ -106,19 +107,27 @@ const hotspots = {
       position: [-0.1, -2.2, 3.1]
     }
   ],
-
   // ── Kids Corridor ──────────────────────────────────────────
-  kidscorridor: [
-   
+  kidsbedroomcorridor: [
+   {
+      target: 'kidsbedroom',
+      position: [3.5, -2.2, 3.1]
+    },
+    {
+      target: 'kidsbedroomtoilet',
+      position: [-2.15, -2.2, 3.35]
+    }
   ],
-
   // ── Kids Bedroom ───────────────────────────────────────────
   kidsbedroom: [
-   
+    {
+      target: 'kidsbedroomcorridor',
+      position: [-3.85, -2.2, -2.60]
+    }
   ],
 
   // ── Kids Toilet ────────────────────────────────────────────
-  kidstoilet: [
+  kidsbedroomtoilet: [
    
   ],
   
@@ -134,9 +143,8 @@ const hotspots = {
       position: [3, -2.2, -2.60]
     }
   ],
-
   // ── Guest Toilet 1 ─────────────────────────────────────────
-  guesttoilet: [
+  guestbedroomtoilet: [
    
   ],
 
