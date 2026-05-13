@@ -90,7 +90,7 @@
       background: rgba(10, 8, 5, 0.88);
       color: #f0ebe0;
       border: 1px solid rgba(201, 162, 58, 0.7);
-      padding: 6px 18px;
+      padding: 10px 18px;
       border-radius: 20px;
       font-size: 12px;
       letter-spacing: 1.5px;
