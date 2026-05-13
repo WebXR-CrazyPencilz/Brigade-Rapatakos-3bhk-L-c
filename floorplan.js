@@ -46,7 +46,7 @@
       overflow: hidden;
       box-shadow: 0 0 0 1px rgba(201,162,58,0.6), 0 0 40px rgba(201,162,58,0.15), 0 20px 60px rgba(0,0,0,0.5);
       outline: 1px solid rgba(201,162,58,0.2);
-      outline-offset: 6px;
+      outline-offset: 14px;
     `
 
     // ── The floorplan image
