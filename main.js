@@ -269,7 +269,7 @@ function loadTexture(key, onDone) {
 }
 
 function preloadInitial() {
-  const priority = ['living', 'livingToBedroom', 'livingToKitchen', 'masterCorridor', 'kidsCorridor']
+  const priority = ['lobby', 'lobbytoliving', 'kitchen', 'masterbedroomcorridor']
   priority.forEach((k, i) => setTimeout(() => loadTexture(k), i * 150))
 }
 
