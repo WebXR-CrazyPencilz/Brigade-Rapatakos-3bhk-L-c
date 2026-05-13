@@ -89,8 +89,8 @@
       transform: translateX(-50%);
       background: rgba(10, 8, 5, 0.88);
       color: #f0ebe0;
-      border: 1px solid rgba(201, 162, 58, 0.7);
-      padding: 24px 40px;
+      border: 5px solid rgba(201, 162, 58, 0.7);
+      padding: 10px 40px;
       border-radius: 20px;
       font-size: 12px;
       letter-spacing: 1.5px;
