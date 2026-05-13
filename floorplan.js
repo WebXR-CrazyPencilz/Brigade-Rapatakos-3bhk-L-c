@@ -144,23 +144,6 @@
       const cx  = pts.reduce((s, p) => s + p[0], 0) / pts.length
       const cy  = pts.reduce((s, p) => s + p[1], 0) / pts.length
 
-      const text = document.createElementNS('http://www.w3.org/2000/svg', 'text')
-      text.setAttribute('x', cx)
-      text.setAttribute('y', cy)
-      text.setAttribute('text-anchor', 'middle')
-      text.setAttribute('dominant-baseline', 'middle')
-      text.setAttribute('fill', '#fff')
-      text.setAttribute('font-size', '13')
-      text.setAttribute('font-weight', '600')
-      text.setAttribute('letter-spacing', '1')
-      text.setAttribute('paint-order', 'stroke fill')
-      text.setAttribute('stroke', 'rgba(0,0,0,0.7)')
-      text.setAttribute('stroke-width', '3')
-      text.setAttribute('stroke-linejoin', 'round')
-      text.setAttribute('pointer-events', 'none')
-      text.textContent = zone.label
-      svg.appendChild(text)
-    })
 
     // ── Hover effect
     svg.addEventListener('mouseover', e => {
