@@ -353,6 +353,7 @@
       top: 0; left: 0;
       width: 100% !important;
       height: 100% !important;
+      z-index: 1;
     }
 
     /* ══════════════════════════════════════════
@@ -497,15 +498,19 @@
         }
 
         if (view === 'floorplan') {
+          const panel  = document.getElementById('side-panel')   // ← add
+          const toggle = document.getElementById('toggle')        // ← add
+          if (panel)  panel.classList.remove('open')              // ← add
+          if (toggle) { toggle.classList.remove('open'); toggle.innerHTML = '❯' }
           viewer360Els().forEach(el => { if (el) el.style.visibility = 'hidden' })
           const cvs = getCanvas()
-          if (cvs) cvs.style.visibility = 'hidden'
+          if (cvs) cvs.style.display = 'none'
           if (window.FloorPlan) window.FloorPlan.show()
         } else {
           if (window.FloorPlan) window.FloorPlan.hide()
           viewer360Els().forEach(el => { if (el) el.style.visibility = 'visible' })
           const cvs = getCanvas()
-          if (cvs) cvs.style.visibility = 'visible'
+          if (cvs) cvs.style.display = 'block'
         }
       }
 

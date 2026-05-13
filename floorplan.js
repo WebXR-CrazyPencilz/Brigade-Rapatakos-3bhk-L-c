@@ -33,7 +33,7 @@
       display: none;
       align-items: center;
       justify-content: center;
-      background: rgba(8, 8, 10, 0.92);
+      background: #ffffff;
     `
 
     //    a position:relative wrapper, so it always matches the image.

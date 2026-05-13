@@ -86,14 +86,14 @@ const hotspots = {
     },
     {
       target: 'lobby',
-      position: [ -.5, -2.2, -4.6]
+      position: [ -.5, -2.2, -4.9]
     }
   ],
   // ── Master Corridor ────────────────────────────────────────
   masterbedroomcorridor: [
     {
-      target: 'livingtobedroom',
-      position: [-4, -2.2, 2]
+      target: 'lobby',
+      position: [-4.35, -2.2, -1.]
     },
     {
       target: 'masterbedroomtoilet',
@@ -185,6 +185,10 @@ const hotspots = {
    {
       target: 'lobbytoliving',
       position: [0.1, -2.2, 5.90]
+   },
+   {
+      target: 'masterbedroomcorridor',
+      position: [4.25, -2.2, 1.80]
    }
   ],
 
