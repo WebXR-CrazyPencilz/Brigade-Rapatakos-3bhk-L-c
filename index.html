@@ -515,6 +515,10 @@
       }
 
       function init () {
+        viewer360Els().forEach(el => { if (el) el.style.display = 'none' })
+        const cvs = getCanvas()
+        if (cvs) cvs.style.display = 'none'
+
         requestAnimationFrame(() => {
           const track    = document.getElementById('vs-track')
           const btnFP    = document.getElementById('btn-fp')
