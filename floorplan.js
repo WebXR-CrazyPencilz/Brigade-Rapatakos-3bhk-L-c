@@ -144,6 +144,8 @@
       const cx  = pts.reduce((s, p) => s + p[0], 0) / pts.length
       const cy  = pts.reduce((s, p) => s + p[1], 0) / pts.length
 
+     
+    })
 
     // ── Hover effect
     svg.addEventListener('mouseover', e => {
