@@ -50,6 +50,10 @@ const hotspots = {
     {
       target: 'guestbedroomcorridor',
       position: [-4., -2.2, 0]
+    },
+    {
+      target: 'dinning',
+      position: [-2.55, -2.2, -2.9]
     }
   ],
 
@@ -65,9 +69,12 @@ const hotspots = {
     {
       target: 'lobbytoliving',
       position: [-.6, -2.2, -5.1]
+    },
+    {
+      target: 'kitchen',
+      position: [-4.2, -2.2, -1.4]
     }
   ],
-
   lobbytoliving: [
     {
       target: 'living',
@@ -76,6 +83,10 @@ const hotspots = {
     {
       target: 'dinning',
       position: [0.05, -2.2, 5.45]
+    },
+    {
+      target: 'lobby',
+      position: [ -.5, -2.2, -4.6]
     }
   ],
   // ── Master Corridor ────────────────────────────────────────
@@ -116,24 +127,42 @@ const hotspots = {
     {
       target: 'kidsbedroomtoilet',
       position: [-2.15, -2.2, 3.35]
-    }
+    },
+    {
+      target: 'livingtobedroom',
+      position: [-3.50, -2.2, 0.1]
+    },
   ],
   // ── Kids Bedroom ───────────────────────────────────────────
   kidsbedroom: [
     {
       target: 'kidsbedroomcorridor',
-      position: [-3.85, -2.2, -2.60]
+      position: [-4.2, -2.2, -2.60]
     }
   ],
 
   // ── Kids Toilet ────────────────────────────────────────────
   kidsbedroomtoilet: [
-   
+   {
+      target: 'kidsbedroomcorridor',
+      position: [1.5, -2.2, -2.90]
+    }
   ],
   
   // livingToBedroom since that's the bedroom hub it belongs to
   guestbedroomcorridor: [
-   
+   {
+      target: 'livingtobedroom',
+      position: [3, -2.2, 0.4]
+   },
+   {
+      target: 'guestbedroomtoilet',
+      position: [1.05, -2.2, 3.60]
+    },
+    {
+      target: 'guestbedroom',
+      position: [-2.40, -2.2, 2.60]
+    }
   ],
 
   // ── Guest Bedroom 1 ────────────────────────────────────────
@@ -145,27 +174,46 @@ const hotspots = {
   ],
   // ── Guest Toilet 1 ─────────────────────────────────────────
   guestbedroomtoilet: [
-   
+   {
+      target: 'guestbedroomcorridor',
+      position: [-0.7, -2.2, -3.0]
+   }
   ],
 
   // ── lobby ──────────────────────────────────────────────────
   lobby: [
-   
+   {
+      target: 'lobbytoliving',
+      position: [0.1, -2.2, 5.90]
+   }
   ],
 
   // ── Kitchen ────────────────────────────────────────────────
   kitchen: [
-    
+    {
+      target: 'utility',
+      position: [-0.75, -2.2, -5.40]
+   }
   ],
 
   // ── Utility ────────────────────────────────────────────────
   utility: [
-   
+   {
+      target: 'kitchen',
+      position: [-0.75, -2.2, 3.40]
+   },
+   {
+      target: 'maidsroom',
+      position: [0, -2.2, -2.15]
+   }
   ],
 
   // ── Staff Room ─────────────────────────────────────────────
   maidsRoom: [
-
+    {
+      target: 'utility',
+      position: [0.1, -2.2, .40]
+    }
   ]
 }
 
